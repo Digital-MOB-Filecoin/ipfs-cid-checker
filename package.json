@@ -1,0 +1,24 @@
+{
+  "name": "ipfs-cid-checker",
+  "version": "1.0.0",
+  "description": "An IPFS checker to demo broken behavior",
+  "scripts": {
+    "start": "npm run build && webpack-dev-server --mode development --open",
+    "build": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "Andreea Stefan",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "regenerator-runtime": "^0.13.3"
+  }
+}
