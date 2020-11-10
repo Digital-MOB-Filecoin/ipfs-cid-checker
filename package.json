@@ -19,6 +19,16 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "from": "^0.1.7",
+    "import": "0.0.6",
+    "ipfs-block-service": "^0.17.1",
+    "ipfs-repo": "^5.0.0",
+    "ipfs-unixfs-exporter": "^2.0.2",
+    "ipfs-unixfs-importer": "^2.0.2",
+    "ipld": "^0.26.3",
+    "ipld-block": "^0.9.2",
+    "it-last": "^1.0.4",
+    "last": "^1.1.0",
     "regenerator-runtime": "^0.13.3"
   }
 }
