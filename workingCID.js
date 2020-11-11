@@ -1,5 +1,5 @@
 
-export const workingCID = 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEUAkP////8Ajv8Aif8Ai/8A\
+const workingCID = 'iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEUAkP////8Ajv8Aif8Ai/8A\
 iv8Ah/8Akf/s9v/0+v/D3//5/f/c7f/T6P+lz//o9P+z1/8el/+HwP+82//j8f+dy//M5P9frv/b\
 7P+Ux/9stP9Zq/9nsv8PlP8pnP9RqP95uv89of+w0/94uP9IpP+YyP+Cvv8Agv9Fov/EZ9E4AAAN\
 /0lEQVR4nM2d6ZqrKBCGkcUsptMas6djYmJ6zv1f4ahZBERFU1Tn+zczzwTfhqKKAgriuVYw/oov\
@@ -66,3 +66,7 @@ JBXsp2+E3SQowlzTHwESzVEhDuHAh8wMAiTMPWR44G8O17z3TuGwh/caBEqYK5ieI39gV1Luj37i\
 wcFLg6AJC32H+2PTGxCNcIKNNqtZ94/3lgvCQsvwNxNWZdfLOonJNQRwDEa5Iiw1i2/7dMSKV7pz\
 VLWiJ83/XY42Sg6L2EXXveSU8K7Jdnq5La6bLE2i6EiOUZSk2ea6uF2m2wncnNmk/wEVpK0NYs6j\
 RAAAAABJRU5ErkJgggA='
+
+export default function getWorkingCID() {
+    return workingCID;
+}
