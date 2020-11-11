@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "An IPFS checker to demo broken behavior",
   "scripts": {
-    "start": "npm run build && webpack-dev-server --mode development --open",
+    "start": "rm -rf dist && npm run build && webpack-dev-server --mode development --open",
     "build": "webpack --mode development"
   },
+  "type": "module",
   "keywords": [],
   "author": "Andreea Stefan",
   "license": "ISC",
@@ -19,16 +20,19 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "base-64": "^1.0.0",
     "from": "^0.1.7",
+    "fs": "0.0.1-security",
+    "fs-extra": "^9.0.1",
     "import": "0.0.6",
-    "ipfs-block-service": "^0.17.1",
-    "ipfs-repo": "^5.0.0",
-    "ipfs-unixfs-exporter": "^2.0.2",
-    "ipfs-unixfs-importer": "^2.0.2",
-    "ipld": "^0.26.3",
-    "ipld-block": "^0.9.2",
-    "it-last": "^1.0.4",
-    "last": "^1.1.0",
+    "ipfs-block-service": "latest",
+    "ipfs-repo": "latest",
+    "ipfs-unixfs-exporter": "latest",
+    "ipfs-unixfs-importer": "latest",
+    "ipld": "latest",
+    "ipld-block": "latest",
+    "it-last": "latest",
+    "last": "latest",
     "regenerator-runtime": "^0.13.3"
   }
 }
