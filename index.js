@@ -5,7 +5,7 @@ import Block from 'ipld-block';
 import Repo from 'ipfs-repo';
 import last from 'it-last';
 import BlockService from 'ipfs-block-service';
-import getWorkingCID from './CidThatWork.js';
+import getWorkingCID from './CidThatWorks.js';
 import getNotWorkingCID from './CidThatFails.js';
 import * as fs from 'fs';
 import textEncoding from 'text-encoding';
