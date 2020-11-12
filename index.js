@@ -62,15 +62,16 @@ import textEncoding from 'text-encoding';
   // console.log('Exported: ' + JSON.stringify(result));
 
   // stream the content of unixfs node after export
+  console.log('importedData size: ' + importedData.length)
   const size = entry.size;
-  const exportedBytes = new Uint8Array(size);
-  let offset = 0;
+  console.log('entry.size: ' + size);
+  
+  let exportedBytes = Buffer.from("");
   for await (const buf of result.content()) {
-    exportedBytes.set(buf, offset)
-    offset += buf.length
+    exportedBytes = Buffer.concat([exportedBytes, buf]);
   }
-
   // log the content of unixfs node after export
+  console.log('exportedBytes size: ' + exportedBytes.length);
   console.log(exportedBytes);
 
   // write it to a file
