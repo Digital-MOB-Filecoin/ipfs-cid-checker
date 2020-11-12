@@ -26,13 +26,13 @@ import textEncoding from 'text-encoding';
   console.log('IPFS repo initialized');
   
   // test with an working CID: bafk2bzacebhlhbcnhmvover42qq5bx773c522skieho6nhtbz7d2ow3f4sw24
-  let importedData = new Buffer(getWorkingCID(), 'base64');
-  let rawLeavesOption = true;
+  // ** uncomment the following lines to test **
+  //let importedData = new Buffer(getWorkingCID(), 'base64');
+  //let rawLeavesOption = true;
   
   // test with a CID that fails: bafykbzaceb7xzlm65omwugcavfxxcxclhnwamjbcodz5rz4kbyhenq7m4pivg
-  // ** uncomment the following lines to test **
-  // let importedData = new Buffer(getNotWorkingCID(), 'base64');
-  // let rawLeavesOption = false;
+  let importedData = new Buffer(getNotWorkingCID(), 'base64');
+  let rawLeavesOption = false;
 
   const entry = await last(
     importer(
@@ -90,12 +90,12 @@ import textEncoding from 'text-encoding';
 })();
 
 /*
-Notice the padding bytes after export:
+Notice the padded bytes after export:
 
--> last bytes of the CID that fails (base64 encoded):
+-> last bytes of CID that fails (base64 encoded):
 W8NK8w8YxDdlzb11SE0nKsu0za4HF7UMYtf+znddUnJOvArTaZ8hpwpnDDxwIgQD9yzJ/TsZTb0qIjU9qvq5CKK
 
--> last bytes of the CID that fails (base64 encoded), after being exported :
+-> last bytes of CID that fails (base64 encoded), after being exported:
 W8NK8w8YxDdlzb11SE0nKsu0za4HF7UMYtf+znddUnJOvArTaZ8hpwpnDDxwIgQD9yzJ/TsZTb0qIjU9qvq5CKK
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
